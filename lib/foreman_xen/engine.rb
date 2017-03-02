@@ -26,7 +26,7 @@ module ForemanXen
 
     assets_to_precompile =
       Dir.chdir(root) do
-        Dir['app/assets/javascripts/**/*', 'app/assets/stylesheets/**/*'].map do |f|
+        Dir['app/assets/javascripts/**/*'].map do |f|
           f.split(File::SEPARATOR, 4).last
         end
       end
